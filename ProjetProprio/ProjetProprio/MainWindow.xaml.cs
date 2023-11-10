@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Devices.Enumeration;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 
@@ -28,9 +29,25 @@ namespace ProjetProprio
             this.InitializeComponent();
         }
 
-        private void myButton_Click(object sender, RoutedEventArgs e)
+        private void navView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
-            myButton.Content = "Clicked";
+            var item = (NavigationViewItem)args.SelectedItem;
+
+            switch (item.Name)
+            {
+                case "iListe":
+                    mainFrame.Navigate(typeof(PageListe));
+                    break;
+                case "iAjouter":
+                    mainFrame.Navigate(typeof(PageAjout));
+                    break;
+                case "iModification":
+                    mainFrame.Navigate(typeof(PageModification));
+                    break;
+                default:
+                    break;
+            }
         }
+
     }
 }
