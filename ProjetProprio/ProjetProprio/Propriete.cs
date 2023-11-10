@@ -15,6 +15,8 @@ namespace ProjetProprio
         double prix;
         string ville;
         int idproprio;
+        string nomproprio;
+        string prenomproprio;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -24,8 +26,17 @@ namespace ProjetProprio
             categorie = pcategorie;
             prix = pprix;
             ville = pville;
-            idproprio = pidproprio;
         }
+
+        //public Propriete(int pid, string pcategorie, double pprix, string pville, int pidproprio, string pnomproprio, string pprenomproprio)
+        //{
+        //    id = pid;
+        //    categorie = pcategorie;
+        //    prix = pprix;
+        //    ville = pville;
+        //    nomproprio = pnomproprio;
+        //    prenomproprio = pprenomproprio;
+        //}
 
         public Propriete()
         {
@@ -85,6 +96,26 @@ namespace ProjetProprio
             set
             {
                 idproprio = value;
+                this.OnPropertyChanged();
+            }
+        }
+
+        public String NomProprio
+        {
+            get { return nomproprio; }
+            set
+            {
+                nomproprio = value;
+                this.OnPropertyChanged();
+            }
+        }
+
+        public String PrenomProprio
+        {
+            get { return prenomproprio; }
+            set
+            {
+                prenomproprio = value;
                 this.OnPropertyChanged();
             }
         }

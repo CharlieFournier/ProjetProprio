@@ -27,6 +27,7 @@ namespace ProjetProprio
         {
             this.InitializeComponent();
             SingletonPropriete.getInstance().getPropriete();
+            SingletonProprietaire.getInstance().getProprietaire();
             GridPropriete.ItemsSource = SingletonPropriete.getInstance().getListe();
         }
 

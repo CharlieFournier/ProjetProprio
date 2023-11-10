@@ -51,10 +51,13 @@ namespace ProjetProprio
                     double prix = (double)r["prix"];
                     string ville = (string)r["ville"];
                     int idproprio = (int)r["idproprio"];
+                    string nomproprio = (string)r["nom"];
+                    string prenomproprio = (string)r["prenom"];
 
 
 
-                    Propriete propriete = new Propriete { Id = id, Categorie = categorie, Prix = prix, Ville = ville, IdProprio = idproprio};
+
+                    Propriete propriete = new Propriete { Id = id, Categorie = categorie, Prix = prix, Ville = ville, IdProprio = idproprio, NomProprio = nomproprio, PrenomProprio = prenomproprio};
                     listePropriete.Add(propriete);
                 }
 
