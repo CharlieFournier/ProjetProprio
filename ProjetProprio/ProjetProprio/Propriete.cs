@@ -26,6 +26,7 @@ namespace ProjetProprio
             categorie = pcategorie;
             prix = pprix;
             ville = pville;
+            idproprio = pidproprio;
         }
 
         //public Propriete(int pid, string pcategorie, double pprix, string pville, int pidproprio, string pnomproprio, string pprenomproprio)

@@ -143,7 +143,7 @@ namespace ProjetProprio
             {
                 MySqlCommand commande = new MySqlCommand();
                 commande.Connection = con;
-                commande.CommandText = $"insert into propriete values(@id, @nom, @prenom)";
+                commande.CommandText = $"insert into proprietaire values(@id, @nom, @prenom)";
 
                 commande.Parameters.AddWithValue("@id", id);
 

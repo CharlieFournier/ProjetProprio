@@ -38,12 +38,16 @@ namespace ProjetProprio
                 case "iListe":
                     mainFrame.Navigate(typeof(PageListe));
                     break;
+                case "iListe2":
+                    mainFrame.Navigate(typeof(PageListeProprietaire));
+                    break;
                 case "iAjouter":
                     mainFrame.Navigate(typeof(PageAjout));
                     break;
-                case "iModification":
-                    mainFrame.Navigate(typeof(PageModification));
+                case "iAjouter2":
+                    mainFrame.Navigate(typeof(PageAjoutProprietaire));
                     break;
+
                 default:
                     break;
             }

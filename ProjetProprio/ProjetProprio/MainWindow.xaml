@@ -17,9 +17,14 @@
 
             <NavigationView.MenuItems>
                 <NavigationViewItemHeader Content=""/>
-                <NavigationViewItem Content="Liste" x:Name="iListe" Icon="People"/>
+                <NavigationViewItem Content="Liste Propriete" x:Name="iListe" Icon="People"/>
                 <NavigationViewItemSeparator />
-                <NavigationViewItem Content="Ajouter" x:Name="iAjouter" Icon="Add"/>
+                <NavigationViewItem Content="Ajouter Propriete" x:Name="iAjouter" Icon="Add"/>
+                <NavigationViewItemHeader Content=""/>
+                <NavigationViewItem Content="Liste Proprietaire" x:Name="iListe2" Icon="People"/>
+                <NavigationViewItemSeparator />
+                <NavigationViewItem Content="Ajouter Proprietaire" x:Name="iAjouter2" Icon="Add"/>
+
             </NavigationView.MenuItems>
 
             <Frame x:Name="mainFrame" Grid.Row="1" />

@@ -46,13 +46,15 @@ namespace ProjetProprio
 
                 while (r.Read())
                 {
-                    int id = (int)r["id"];
-                    string categorie = (string)r["categorie"];
-                    double prix = (double)r["prix"];
-                    string ville = (string)r["ville"];
-                    int idproprio = (int)r["idproprio"];
+
+                    int idproprio = (int)r["idProprio"];
                     string nomproprio = (string)r["nom"];
                     string prenomproprio = (string)r["prenom"];
+                    string categorie = (string)r["categorie"];
+                    string ville = (string)r["ville"];
+                    double prix = (double)r["prix"];
+                    int id = (int)r["Proprieteid"];
+
 
 
 

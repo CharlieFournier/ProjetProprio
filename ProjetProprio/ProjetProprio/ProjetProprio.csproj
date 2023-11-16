@@ -13,7 +13,9 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="PageAjout.xaml" />
+    <None Remove="PageAjoutProprietaire.xaml" />
     <None Remove="PageListe.xaml" />
+    <None Remove="PageListeProprietaire.xaml" />
     <None Remove="PageModification.xaml" />
   </ItemGroup>
 
@@ -41,6 +43,16 @@
   -->
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="PageAjoutProprietaire.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="PageListeProprietaire.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="PageModification.xaml">
