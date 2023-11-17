@@ -34,7 +34,7 @@ namespace ProjetProprio
         private void GridPropriete_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             int index = GridPropriete.SelectedIndex;
-            this.Frame.Navigate(typeof(PageModification), index);
+            this.Frame.Navigate(typeof(PageModificationProprietaire), index);
         }
     }
 }

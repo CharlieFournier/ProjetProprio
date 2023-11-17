@@ -5,6 +5,7 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
+using Org.BouncyCastle.Asn1.Ocsp;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -19,15 +20,12 @@ using Windows.Foundation.Collections;
 
 namespace ProjetProprio
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
-    public sealed partial class PageModification : Page
+   
+    public sealed partial class PageModificationProprietaire : Page
     {
         int index;
-
-        Propriete p;
-        public PageModification()
+        Proprietaire p;
+        public PageModificationProprietaire()
         {
             this.InitializeComponent();
         }
@@ -38,12 +36,12 @@ namespace ProjetProprio
 
             if (index >= 0)
             {
-                p = SingletonPropriete.getInstance().getListe()[index];
+                p = SingletonProprietaire.getInstance().getListe()[index];
 
-                tblId.Text = "ID Propriete: " + p.Id;
-
+                tblId.Text = "ID Proprietaire: " + p.Id;
 
             }
         }
+
     }
 }
