@@ -38,7 +38,7 @@ namespace ProjetProprio
             {
                 p = SingletonProprietaire.getInstance().getListe()[index];
 
-                tblId.Text = "ID Proprietaire: " + p.Id;
+                tblId.Text = "ID Proprietaire: " + p.Id; 
 
             }
         }
